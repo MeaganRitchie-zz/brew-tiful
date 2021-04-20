@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cart from './Cart';
 import MenuContainer from './MenuContainer';
+import './App.css';
 
 export default class App extends Component {
 
