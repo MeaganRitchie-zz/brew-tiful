@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import Cart from './Cart';
 import MenuContainer from './MenuContainer';
 import './App.css';
+import NavBar from './NavBar';
 
 export default class App extends Component {
 
   state = {
     menu: [],
-    cart: [], 
-    like: []
+    cart: [],
+    like: false
   }
 
   componentDidMount() {
@@ -19,10 +20,14 @@ export default class App extends Component {
       )
   }
 
+  addLike = () => {
+    this.setState({ like: true })
+  }
+
   addItemToCart = (clickedItem) => {
     const findMatch = this.state.cart.find(item => item === clickedItem)
 
-    if(!findMatch){
+    if (!findMatch) {
       this.setState({
         cart: [...this.state.cart, clickedItem]
       })
@@ -41,8 +46,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Cart cart={ this.state.cart } clickAction={ this.removeItemFromCart } like={ this.state.like }/>
-        <MenuContainer menu={ this.state.menu } clickAction={ this.addItemToCart } like={ this.state.like }/>
+        <NavBar />
+        <Cart cart={this.state.cart} clickAction={this.removeItemFromCart} like={this.state.like} />
+        <MenuContainer menu={this.state.menu} clickAction={this.addItemToCart} like={this.state.like} addLike={this.addLike} />
 
       </div>
     )
