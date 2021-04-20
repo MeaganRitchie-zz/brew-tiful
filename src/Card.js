@@ -7,10 +7,10 @@ export default function Card(props) {
   }
 
   return (
-    <div>
+    <div className="menu-item">
       <img src={ props.item.image } alt='food' />
       <h1>{ props.item.name }</h1>
-      <button onClick={ handleClick }>Add To Cart</button>
+      <button onClick={ handleClick } className="button" >Add To Cart</button>
     </div>
   )
 }
