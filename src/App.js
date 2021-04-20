@@ -7,7 +7,8 @@ export default class App extends Component {
 
   state = {
     menu: [],
-    cart: []
+    cart: [], 
+    like: []
   }
 
   componentDidMount() {
@@ -40,8 +41,8 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Cart cart={ this.state.cart } clickAction={ this.removeItemFromCart }/>
-        <MenuContainer menu={ this.state.menu } clickAction={ this.addItemToCart }/>
+        <Cart cart={ this.state.cart } clickAction={ this.removeItemFromCart } like={ this.state.like }/>
+        <MenuContainer menu={ this.state.menu } clickAction={ this.addItemToCart } like={ this.state.like }/>
 
       </div>
     )
