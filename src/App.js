@@ -5,6 +5,7 @@ import './App.css';
 import NavBar from './NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home'
+
 export default class App extends Component {
 
   state = {
