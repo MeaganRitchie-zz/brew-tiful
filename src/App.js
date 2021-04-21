@@ -3,8 +3,8 @@ import Cart from './Cart';
 import MenuContainer from './MenuContainer';
 import './App.css';
 import NavBar from './NavBar';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './Home'
 export default class App extends Component {
 
   state = {
@@ -50,25 +50,31 @@ export default class App extends Component {
         <div>
           <NavBar />
           <Switch>
-            <Route 
+            <Route
+              exact path="/"
+              render={() =>
+                <Home />
+              }
+            />
+            <Route
               path="/cart"
-              render={() => 
-                <Cart 
-                  cart={this.state.cart} 
-                  clickAction={this.removeItemFromCart} 
-                  like={this.state.like} 
+              render={() =>
+                <Cart
+                  cart={this.state.cart}
+                  clickAction={this.removeItemFromCart}
+                  like={this.state.like}
                 />
               }
             />
-            
+
             <Route
-              exact path="/menu"
-              render={() => 
-                <MenuContainer 
-                  menu={this.state.menu} 
-                  clickAction={this.addItemToCart} 
-                  like={this.state.like} 
-                  addLike={this.addLike} 
+              path="/menu"
+              render={() =>
+                <MenuContainer
+                  menu={this.state.menu}
+                  clickAction={this.addItemToCart}
+                  like={this.state.like}
+                  addLike={this.addLike}
                 />
               }
             />
