@@ -11,7 +11,8 @@ export default class App extends Component {
   state = {
     menu: [],
     cart: [],
-    like: false
+    inCart: false,
+    like: false,
   }
 
   componentDidMount() {
@@ -33,8 +34,11 @@ export default class App extends Component {
       this.setState({
         cart: [...this.state.cart, clickedItem]
       })
-      console.log('Add to cart was clicked')
+      this.setState({
+        inCart: true
+      })
     }
+    alert("Added to Cart!")
   }
 
   removeItemFromCart = (clickedItem) => {
@@ -53,9 +57,7 @@ export default class App extends Component {
           <Switch>
             <Route
               exact path="/"
-              render={() =>
-                <Home />
-              }
+              component = { Home }
             />
             <Route
               path="/cart"
@@ -64,10 +66,10 @@ export default class App extends Component {
                   cart={this.state.cart}
                   clickAction={this.removeItemFromCart}
                   like={this.state.like}
+                  inCart={this.state.inCart}
                 />
               }
             />
-
             <Route
               path="/menu"
               render={() =>
@@ -79,7 +81,6 @@ export default class App extends Component {
                 />
               }
             />
-
           </Switch>
         </div>
       </BrowserRouter>

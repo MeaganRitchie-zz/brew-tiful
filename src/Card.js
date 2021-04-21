@@ -10,7 +10,6 @@ export default function Card(props) {
     props.addLike(props.item)
   }
 
-
   return (
     <div className="menu-item">
       <img src={props.item.image} alt='food' />
@@ -21,7 +20,7 @@ export default function Card(props) {
           <button className="button">{<i class="far fa-share-square"></i>}</button>
         </div>
         <p>. . . . . . . . . . . . . . . . . .</p>
-        <button onClick={handleClick} className="button" >{<i class="fas fa-shopping-basket"></i>} Add To Cart</button>
+        <button onClick={handleClick} className="button" ><i className="fas fa-shopping-basket"></i>{props.inCart ? "Remove" : "Add to Cart"}</button>
       </div>
     </div >
   )
