@@ -2,27 +2,32 @@
   "items": [
     {
       "name": "Vanilla Latte",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1545408074-076d7582081e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=675&q=80"
     },
     {
       "name": "Flower Tea",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1467164616789-ce7ae65ab4c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGljZWQlMjBndWF2YSUyMHRlYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Dark Chocolate Mocha",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1603374399574-4cf3f4d79d34?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     },
     {
       "name": "Chai Latte",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=975&q=80"
     },
     {
       "name": "Pumpkin Spice Latte",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1587080413959-06b859fb107d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=810&q=80"
     },
     {
