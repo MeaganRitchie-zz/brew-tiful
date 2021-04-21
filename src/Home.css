@@ -1,16 +1,19 @@
+
 section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   padding: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: white; */
+  background: white;
 }
+
 .content {
   position: relative;
   width: 100%;
+  top: -100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,8 +22,7 @@ section {
 
 .content .textBox {
   position: relative;
-  max-width: 600px;
-}
+  max-width: 600px;}
 
 .content .textBox h2 {
   color: #333;
@@ -61,13 +63,14 @@ section {
 
 .content .imgBox img {
   width: 600px;
- image-orientation: 90deg;
+  transform: rotate(-8deg);
+  z-index: 2;
 }
 
 .thumb {
   position: absolute;
   left: 50%;
-  bottom: -400px;
+  bottom: -100px;
   transform: translateX(-50%);
   display: flex;
 }
@@ -85,15 +88,17 @@ section {
 }
 
 .thumb li img {
-  max-width: 60px;
+  max-width: 120px;
+  height: 90px;
 }
 
 .circle {
  position: absolute;
  top: 0;
- left: 0;
+ right: 100px;
  width: 100%;
  height: 100%;
  background: rgb(228,106,153);
- clip-path:  circle(550px at right 800px);
+ clip-path:  circle(800px at right 1200px);
+ z-index: 1;
 }

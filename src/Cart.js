@@ -9,6 +9,7 @@ export default function Cart(props) {
         item={item} 
         key={item.name} 
         clickAction={props.clickAction} 
+        inCart={props.inCart}
       />
     })
   }

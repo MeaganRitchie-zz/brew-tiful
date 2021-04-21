@@ -18,7 +18,7 @@ export default function MenuContainer(props) {
 
   return (
     <div>
-      <h1>Menu Items</h1>
+      {/* <h1>Menu Items</h1> */}
       <div className="menu-container">
         {renderCard()}
       </div>
