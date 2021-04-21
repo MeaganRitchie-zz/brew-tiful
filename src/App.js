@@ -3,6 +3,7 @@ import Cart from './Cart';
 import MenuContainer from './MenuContainer';
 import './App.css';
 import NavBar from './NavBar';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 export default class App extends Component {
 
@@ -45,12 +46,36 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <NavBar />
-        <Cart cart={this.state.cart} clickAction={this.removeItemFromCart} like={this.state.like} />
-        <MenuContainer menu={this.state.menu} clickAction={this.addItemToCart} like={this.state.like} addLike={this.addLike} />
+      <BrowserRouter>
+        <div>
+          <NavBar />
+          <Switch>
+            <Route 
+              path="/cart"
+              render={() => 
+                <Cart 
+                  cart={this.state.cart} 
+                  clickAction={this.removeItemFromCart} 
+                  like={this.state.like} 
+                />
+              }
+            />
+            
+            <Route
+              exact path="/menu"
+              render={() => 
+                <MenuContainer 
+                  menu={this.state.menu} 
+                  clickAction={this.addItemToCart} 
+                  like={this.state.like} 
+                  addLike={this.addLike} 
+                />
+              }
+            />
 
-      </div>
+          </Switch>
+        </div>
+      </BrowserRouter>
     )
   }
 }
