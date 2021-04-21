@@ -1,0 +1,99 @@
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: white; */
+}
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white, 0.9;
+}
+
+.content .textBox {
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2 {
+  color: #333;
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: rgb(228,106,153);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: #333;
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: rgb(251, 237, 236);
+  color: rgb(228,106,153);
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .imgBox {
+  width: 800px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.content .imgBox img {
+  width: 600px;
+ image-orientation: 90deg;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: -400px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 60px;
+}
+
+.circle {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgb(228,106,153);
+ clip-path:  circle(550px at right 800px);
+}
