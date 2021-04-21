@@ -43,8 +43,19 @@ body {
   text-decoration: none;
 }
 #navbar #cart-link {
-float:right;
-word-spacing: 20px;
+  float:right;
+  word-spacing: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#navbar #cart-link span {
+  padding-left: 5px;
+}
+
+#navbar #cart-link i {
+  padding-bottom: 6px;
+  color:rgb(228, 106, 153);
 }
 
 .cart-container {
