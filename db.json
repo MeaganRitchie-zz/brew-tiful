@@ -32,67 +32,80 @@
     },
     {
       "name": "Fresh Squeezed Lemonade",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1606943932434-2f21e1c54ef2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVtb25hZGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Pineapple Splasher",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1607446045710-d5a8fd9bc1db?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80"
     },
     {
       "name": "Rose Tango Tea",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1501841580093-a258b1937efe?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHBpbmslMjB0ZWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Caramel Macchiato",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1608802833178-56df8d3539c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80"
     },
     {
       "name": "Fruit Smoothie",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1594013786645-e2ddb258e371?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJ1aXQlMjBzbW9vdGhpZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Raspberry Refresher",
-      "category": "cold drink",
+      "category_img": "far fa-snowflake",
+      "category_name": "Cold Drink",
       "image": "https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZydWl0eSUyMGRyaW5rfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Macaron",
-      "category": "sweet",
+      "category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",
       "image": "https://images.unsplash.com/photo-1528732789919-d00668b81f01?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFlc3RldGhpYyUyMG1hY2Fyb258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
     },
     {
       "name": "Cupcake",
-      "category": "sweet",
+"category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",      
       "image": "https://images.unsplash.com/photo-1596151227289-74af7765c16e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
     },
     {
       "name": "Donut",
-      "category": "sweet",
+"category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",      
       "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=80"
     },
     {
       "name": "Cake Pop",
-      "category": "sweet",
+"category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",      
       "image": "https://images.unsplash.com/photo-1553786013-ad9531e591d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1020&q=80"
     },
     {
       "name": "Chocolate Croissant",
-      "category": "sweet",
+"category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",      
       "image": "https://www.theflavorbender.com/wp-content/uploads/2020/05/French-Croissants-2363-699x1047.jpg"
     },
     {
       "name": "Celebration Cookie",
-      "category": "sweet",
+"category_img": "fas fa-birthday-cake",
+      "category_name": "Pastry",      
       "image": "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/09/drop-sugar-cookies-with-sprinkles.jpg"
     },
     {
       "name": "Matcha Green Tea Latte",
-      "category": "hot drink",
+      "category_img": "fas fa-mug-hot",
+      "category_name": "Hot Drink",
       "image": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751&q=80"
     }
   ]
