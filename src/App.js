@@ -5,6 +5,8 @@ import './App.css';
 import NavBar from './NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home'
+import SideBar from './SideBar'
+
 
 export default class App extends Component {
 
@@ -13,6 +15,7 @@ export default class App extends Component {
     cart: [],
     inCart: false,
     like: false,
+    selected: "all"
   }
 
   componentDidMount() {
@@ -49,15 +52,23 @@ export default class App extends Component {
     })
   }
 
+  changeSelected = (value) => {
+    this.setState({ selected: value })
+  }
+
   render() {
     return (
       <BrowserRouter>
         <div>
           <NavBar />
+          {/* <SideBar
+            selected={this.state.selected}
+            changeSelected={this.changeSelected}
+          /> */}
           <Switch>
             <Route
               exact path="/"
-              component = { Home }
+              component={Home}
             />
             <Route
               path="/cart"
@@ -78,6 +89,8 @@ export default class App extends Component {
                   clickAction={this.addItemToCart}
                   like={this.state.like}
                   addLike={this.addLike}
+                  selected={this.state.selected}
+                  changeSelected={this.changeSelected}
                 />
               }
             />

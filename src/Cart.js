@@ -5,10 +5,10 @@ export default function Cart(props) {
 
   const renderCartItems = () => {
     return props.cart.map(item => {
-      return <Card 
-        item={item} 
-        key={item.name} 
-        clickAction={props.clickAction} 
+      return <Card
+        item={item}
+        key={item.name}
+        clickAction={props.clickAction}
         inCart={props.inCart}
       />
     })
