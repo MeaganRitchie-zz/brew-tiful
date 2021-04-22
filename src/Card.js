@@ -22,7 +22,7 @@ export default function Card(props) {
         </div>
         <p>. . . . . . . . . . . . . . . . . .</p>
         <div className="like-buttons">
-          <button onClick={handleLike} className="button" > {props.like ? < i className="fas fa-heart"></i> : < i className="far fa-heart"></i>} </button>
+          <button onClick={handleLike} className="button" > {props.item.like ? < i className="fas fa-heart"></i> : < i className="far fa-heart"></i>} </button>
           <button className="button">{<i class="far fa-share-square"></i>}</button>
         </div>
         <p>. . . . . . . . . . . . . . . . . .</p>

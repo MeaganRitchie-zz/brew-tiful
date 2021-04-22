@@ -26,8 +26,10 @@ export default class App extends Component {
       )
   }
 
-  addLike = () => {
-    this.setState({ like: true })
+  addLike = (item) => {
+    const foundItem = this.state.menu.find(i => item === i)
+    foundItem.like = !item.like
+    this.setState({ ...this.state.like, foundItem })
   }
 
   addItemToCart = (clickedItem) => {
@@ -61,10 +63,6 @@ export default class App extends Component {
       <BrowserRouter>
         <div>
           <NavBar />
-          {/* <SideBar
-            selected={this.state.selected}
-            changeSelected={this.changeSelected}
-          /> */}
           <Switch>
             <Route
               exact path="/"
