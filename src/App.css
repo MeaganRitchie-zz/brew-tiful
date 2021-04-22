@@ -134,12 +134,13 @@ body {
   transform: translateY(-60px);
 }
 
-.cart-container > span {
+.cart-container #shopping, #checkout {
   border: rgb(228, 106, 153) solid;
   padding-bottom: 0;
   background: rgb(228, 106, 153);
   color: rgb(251, 237, 236);
   margin-bottom: 40px;
+  text-decoration: none;
 }
 
 .menu-container {
@@ -163,6 +164,7 @@ body {
   height: 400px;
   background: white;
   margin: 15px;
+  margin-right: 25px;
   margin-bottom: 40px;
   display:flex;
   flex-direction: row;
