@@ -15,8 +15,9 @@ export default function Cart(props) {
   }
   return (
     <div className="cart-container">
-      <h1>Cart</h1>
+      <h1>Your Cart</h1>
       {renderCartItems()}
+      <span className="button">Continue to Checkout</span>
     </div>
   )
 }
