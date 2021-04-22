@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import SideBar from "./SideBar"
 
 export default function MenuContainer(props) {
 
@@ -30,9 +31,14 @@ export default function MenuContainer(props) {
 
 
   return (
-    <div>
-      {/* <h1>Menu Items</h1> */}
-      <div className="menu-container">
+    <div className="menu-container">
+      <div className="aside-container">
+        <SideBar
+          selected={props.selected}
+          changeSelected={props.changeSelected}
+        />
+      </div>
+      <div className="card-container">
         {renderCard()}
       </div>
     </div>

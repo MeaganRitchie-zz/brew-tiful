@@ -6,11 +6,14 @@ export default function SideBar(props) {
     props.changeSelected(event.target.name)
   }
   return (
-    <aside className="aside-container">
+    <div className="aside">
+      <p id="title" >Menu Items</p>
       {props.selected === "all" ?
-        <button onClick={handleClick} name="all" style={{ backgroundColor: "rgb(228, 106, 153)", color: "rgb(251, 237, 236)" }}>See All Items</button> :
-        <button onClick={handleClick} name="all">See All Items</button>
+        <button onClick={handleClick} name="all" style={{ backgroundColor: "rgb(228, 106, 153)", color: "rgb(251, 237, 236)" }}>All Products</button> :
+        <button onClick={handleClick} name="all">All Products</button>
       }
+      <h3>. . . . . . . . . . . . . . . . . .</h3>
+      <p>Drinks</p>
       {
         props.selected === "Hot Drink" ?
           <button onClick={handleClick} name="Hot Drink" style={{ backgroundColor: "rgb(228, 106, 153)", color: "rgb(251, 237, 236)" }}>Hot Drinks</button> :
@@ -21,11 +24,13 @@ export default function SideBar(props) {
           <button onClick={handleClick} name="Cold Drink" style={{ backgroundColor: "rgb(228, 106, 153)", color: "rgb(251, 237, 236)" }}>Cold Drinks</button> :
           <button onClick={handleClick} name="Cold Drink">Cold Drinks</button>
       }
+      <h3>. . . . . . . . . . . . . . . . . .</h3>
+      <p>Food</p>
       {
         props.selected === "Pastry" ?
           <button onClick={handleClick} name="Pastry" style={{ backgroundColor: "rgb(228, 106, 153)", color: "rgb(251, 237, 236)" }}>Pastries</button> :
           <button onClick={handleClick} name="Pastry">Pastries</button>
       }
-    </aside>
+    </div>
   )
 }

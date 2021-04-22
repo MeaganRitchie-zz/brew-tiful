@@ -16,9 +16,9 @@ export default function Card(props) {
       <div className="menu-item-details">
         <h1>{props.item.name}</h1>
         <div id="category">
-        <i className={props.item.category_img}></i>
-        {/* <span id="space"> ~ </span> */}
-        <span> {props.item.category_name}</span>
+          <i className={props.item.category_img}></i>
+          {/* <span id="space"> ~ </span> */}
+          <span> {props.item.category_name}</span>
         </div>
         <p>. . . . . . . . . . . . . . . . . .</p>
         <div className="like-buttons">

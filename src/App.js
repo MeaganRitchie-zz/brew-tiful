@@ -6,7 +6,7 @@ import NavBar from './NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home'
 import SideBar from './SideBar'
-import { getAllByAltText } from '@testing-library/dom';
+
 
 export default class App extends Component {
 
@@ -61,10 +61,10 @@ export default class App extends Component {
       <BrowserRouter>
         <div>
           <NavBar />
-          <SideBar
+          {/* <SideBar
             selected={this.state.selected}
             changeSelected={this.changeSelected}
-          />
+          /> */}
           <Switch>
             <Route
               exact path="/"
@@ -90,6 +90,7 @@ export default class App extends Component {
                   like={this.state.like}
                   addLike={this.addLike}
                   selected={this.state.selected}
+                  changeSelected={this.changeSelected}
                 />
               }
             />
