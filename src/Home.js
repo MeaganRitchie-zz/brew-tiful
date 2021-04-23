@@ -34,7 +34,7 @@ export default function Home() {
           <p>Our hot drinks are <strong>mug</strong>-nificent. Our cold drinks are <strong>berry</strong> refreshing!</p>
           <p>It's never too late for <strong>choco</strong>-late! <strong>Muffin</strong> compares to our pastries</p>
           <p>Have a <strong>brew</strong>-tiful day! Keep livin' la vida <strong>mocha</strong>!</p>
-          <p>XO Your main <strong>squeezes</strong> <i className="fas fa-lemon" ></i>, Meagan and Anika</p>
+          <p>XO Your main <strong>squeezes</strong> <i id="lemon" className="fas fa-lemon" ></i>, Meagan and Anika</p>
           <a className="button" href="./menu">See Our Menu</a>
         </div>
         <div className="imgBox">
