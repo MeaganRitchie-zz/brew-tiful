@@ -43,7 +43,6 @@ export default class App extends Component {
         inCart: true
       })
     }
-    alert("Added to Cart!")
   }
 
   removeItemFromCart = (clickedItem) => {
@@ -56,6 +55,13 @@ export default class App extends Component {
 
   changeSelected = (value) => {
     this.setState({ selected: value })
+  }
+
+  checkMenuItemsInCart = () => {
+    return this.state.menu.map(item => {
+      const inCart = this.state.cart.find(cartItem => cartItem.name === item.name)
+      return inCart ? {...item, isInCart: true} : {...item, isInCart: false}
+    })
   }
 
   render() {
@@ -83,7 +89,7 @@ export default class App extends Component {
               path="/menu"
               render={() =>
                 <MenuContainer
-                  menu={this.state.menu}
+                  menu={this.checkMenuItemsInCart()} //Need to invoke this to maintain state
                   clickAction={this.addItemToCart}
                   like={this.state.like}
                   addLike={this.addLike}

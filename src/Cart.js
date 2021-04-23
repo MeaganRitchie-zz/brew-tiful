@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from './Card';
 
 export default function Cart(props) {
@@ -17,7 +18,7 @@ export default function Cart(props) {
     <div className="cart-container">
       <h1>Your Cart</h1>
       {renderCartItems()}
-      <a href='./menu' id="shopping" className="button">Continue Shopping</a>
+      <Link to='./menu' id="shopping" className="button">Continue Shopping</Link>
       <span id="checkout" className="button">Continue to Checkout</span>
     </div>
   )

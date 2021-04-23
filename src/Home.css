@@ -62,7 +62,6 @@ section {
 }
 
 .content .imgBox img {
-  width: 600px;
   transform: rotate(-8deg);
   z-index: 2;
 }
@@ -71,7 +70,7 @@ section {
   position: absolute;
   left: 50%;
   bottom: -100px;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
   display: flex;
 }
 
@@ -88,9 +87,13 @@ section {
 }
 
 .thumb li img {
-  max-width: 120px;
-  height: 90px;
+  max-width: 230px;
+  height: 190px;
 }
+
+/* .thumb #cocktail, #stack {
+  height: 250px;
+} */
 
 .circle {
  position: absolute;
