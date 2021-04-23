@@ -12,6 +12,7 @@
 * [License](#license)
 
 ## General Info
+Love You A Latte Café is open for business!
 
 ## Preview
 
@@ -39,7 +40,7 @@ npm start
 ## Inspiration
 
 ## Contact
-Created by [Anika Bernstein]() and [Meagan Ritchie](https://www.linkedin.com/in/meagan-ritchie-tech/)
+Created by [Anika Bernstein](https://github.com/anikajb92) and [Meagan Ritchie](https://www.linkedin.com/in/meagan-ritchie-tech/)
 
 ## License
 [Click to View](https://www.gnu.org/licenses/gpl-3.0.en.html)

@@ -75,7 +75,8 @@ body {
 }
 
 .aside-container {
-  background-color: rgba(255, 255, 255, 0.735);
+  background-color: rgba(255, 255, 255);
+  border:rgba(245, 198, 226, 1) solid;
   position: sticky;
   display: flex;
   flex-wrap: nowrap;
@@ -84,7 +85,7 @@ body {
   font-size: 30px;
   width: 190px;
   border-radius: 20px;
-  margin: 5px;
+  margin: 20px;
   height: 50vh;
   text-align:center;
 }
@@ -97,7 +98,7 @@ body {
   padding: 1px 5px 10px 5px;
   border-radius: 15px;
   border-color: transparent;
-  box-shadow: 0px 13px 10px -10px  rgba(245, 198, 226, 1);
+  box-shadow: 0px 13px 8px -10px  rgba(188, 202, 206, 0.5);
   cursor: pointer;
   transition: all ease-in-out 300ms;
   height: 30px;
@@ -109,17 +110,19 @@ body {
   font-weight: 700;
   font-size: 25px;
   text-align: center;
+  padding-left: 0px;
 }
 .aside p {
   font-weight: 500;
   text-align: left;
   font-size: 25px ;
   margin-top: 0px;
+  padding-left: 7px;
 
 }
 .aside h3 {
-  color: rgba(245, 198, 226, 0.5);
-  margin: 15px 0px 0px 0px;
+  color: rgba(113, 165, 228, 0.228);
+  margin: 15px 0px 15px 0px;
   letter-spacing: 2px;
   font-size: 15px;
 }
