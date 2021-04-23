@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from './Card';
 import SideBar from "./SideBar"
 
 export default function MenuContainer(props) {
+
+  useEffect(() => { props.changeBackground(false) }, [])
 
   const renderCard = () => {
     if (props.selected === "all") {

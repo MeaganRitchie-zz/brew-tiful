@@ -5,7 +5,6 @@ import './App.css';
 import NavBar from './NavBar';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home'
-import SideBar from './SideBar'
 
 
 export default class App extends Component {
@@ -15,7 +14,8 @@ export default class App extends Component {
     cart: [],
     inCart: false,
     like: false,
-    selected: "all"
+    selected: "all",
+    home: true
   }
 
   componentDidMount() {
@@ -60,15 +60,21 @@ export default class App extends Component {
   checkMenuItemsInCart = () => {
     return this.state.menu.map(item => {
       const inCart = this.state.cart.find(cartItem => cartItem.name === item.name)
-      return inCart ? {...item, isInCart: true} : {...item, isInCart: false}
+      return inCart ? { ...item, isInCart: true } : { ...item, isInCart: false }
     })
+  }
+
+  changeBackground = (clicked) => {
+    this.setState({ home: clicked })
   }
 
   render() {
     return (
       <BrowserRouter>
-        <div>
-          <NavBar />
+        <div className={this.state.home ? "white" : "pink"}>
+          <NavBar
+            changeBackground={this.changeBackground}
+          />
           <Switch>
             <Route
               exact path="/"
@@ -82,6 +88,7 @@ export default class App extends Component {
                   clickAction={this.removeItemFromCart}
                   like={this.state.like}
                   inCart={this.state.inCart}
+                  changeBackground={this.changeBackground}
                 />
               }
             />
@@ -95,6 +102,7 @@ export default class App extends Component {
                   addLike={this.addLike}
                   selected={this.state.selected}
                   changeSelected={this.changeSelected}
+                  changeBackground={this.changeBackground}
                 />
               }
             />

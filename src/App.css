@@ -17,6 +17,13 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+}
+
+.white {
+  background-image: none;
+  background-color: white;
+}
+.pink {
   background-image: url('./backgrounds/macaron_background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,10 +35,10 @@ body {
   background-color: rgba(255, 255, 255, 0.735);
   position: sticky;
   font-size: 30px;
-  top: 0;
+  top: 5px;
   width: 100%;
   border-radius: 20px;
-  margin: 5px;
+  margin-bottom: 5px;
   z-index: 2;
 }
 
@@ -85,8 +92,8 @@ body {
 .aside-container button {
   margin: 5px;
   display: inline-block;
-  background: rgb(251, 237, 236);
-  color: rgb(228, 106, 153);
+  background: rgb(206, 241, 253);
+  color: rgb(84, 150, 232);
   padding: 1px 5px 10px 5px;
   border-radius: 15px;
   border-color: transparent;
@@ -116,12 +123,15 @@ body {
   letter-spacing: 2px;
   font-size: 15px;
 }
+.cart-page {
+  height: 200vh;
+}
 .cart-container {
   background-color: rgba(255, 255, 255, 0.735);
   margin: 100px;
   border-radius:20px;
   border:rgba(245, 198, 226, 1) solid;
-  height: 100%;
+  /* height: 100%; */
   width: 90vw;
   display: flex;
   flex-direction: column;
