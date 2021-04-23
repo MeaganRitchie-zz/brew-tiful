@@ -15,6 +15,9 @@
 Love You A Latte Café is open for business!
 
 ## Preview
+![home page gif](https://media.giphy.com/media/ZKIX7s22aDNQrwKlOY/giphy.gif) 
+
+![menu gif](https://media.giphy.com/media/33Io99CIDgjlgVQ7b8/giphy.gif)
 
 ## Technologies
 * React
