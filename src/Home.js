@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Home.css';
-import Macaron_Stack from './backgrounds/macaron_stack.png';
+import Macaron_Stack from './backgrounds/macaron_stack2.png';
 import Latte_Drink from './backgrounds/latte.png';
 import Cocktail from './backgrounds/cocktail.png';
 import Iced_Latte from './backgrounds/iced_latte.png';
-import Donut from './backgrounds/Donut2.png';
+import Donut from './backgrounds/Donut3.png';
 
 
 export default function Home() {

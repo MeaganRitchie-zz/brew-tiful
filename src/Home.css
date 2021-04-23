@@ -62,8 +62,6 @@ section {
 }
 
 .content .imgBox img {
-  max-width: 800px;
-  min-width: 600px;
   transform: rotate(-8deg);
   z-index: 2;
 }
