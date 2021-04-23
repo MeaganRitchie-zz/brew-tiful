@@ -43,7 +43,6 @@ export default class App extends Component {
         inCart: true
       })
     }
-    alert("Added to Cart!")
   }
 
   removeItemFromCart = (clickedItem) => {
