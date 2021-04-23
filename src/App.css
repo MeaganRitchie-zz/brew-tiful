@@ -36,7 +36,10 @@ body {
 }
 
 #navbar img {
-  transform: scale(0.1);
+  width: 45px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 11px;
 }
 
 #navbar a {
@@ -249,6 +252,11 @@ body {
   font-size:larger;
   margin-bottom: 5px;
 }
+
+.button#add span {
+  padding-left: 5px;
+}
+
 .button:hover {
   box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
   transform: translate(0px, -10px) scale(1.2);
@@ -270,8 +278,4 @@ body {
   color: rgba(245, 198, 226, 0.5);
   margin: 1px 0px 10px 0px;
   letter-spacing: 2px;
-}
-
-#add:: {
-  background-color: blue;
 }

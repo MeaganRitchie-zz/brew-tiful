@@ -10,9 +10,10 @@ export default function Card(props) {
     props.addLike(props.item)
   }
 
-  const [color, setColor] = useState("rgb(251, 237, 236)");
-  const [font, setFont] = useState("rgb(228,106,153)")
-  const [icon, setIcon] = useState("fas fa-shopping-basket");
+  const [ words, setWords] = useState(props.item.isInCart ? "Already Added" : "Add To Cart")
+  const [color, setColor] = useState(props.item.isInCart ? "rgb(228,106,153)" : "rgb(251, 237, 236)"); 
+  const [font, setFont] = useState(props.item.isInCart ? "rgb(251, 237, 236)" : "rgb(228,106,153)")
+  const [icon, setIcon] = useState(props.item.isInCart ? "fas fa-check" : "fas fa-shopping-basket");
 
   const changeColor = (color, font) => {
     setColor(color)
@@ -46,13 +47,16 @@ export default function Card(props) {
         </div>
         <p>. . . . . . . . . . . . . . . . . .</p>
         <button 
-          onClick={() => {handleClick(); changeIcon("fas fa-check"); changeColor("rgb(228,106,153)", "rgb(251, 237, 236)")}}
+          onClick={() => {
+            handleClick(); 
+            changeIcon("fas fa-check"); 
+            changeColor("rgb(228,106,153)", "rgb(251, 237, 236)")
+          }}
           style={{backgroundColor: color , color: font}}
           id="add"
           className="button" >
-              < i className={icon}>
-              </i>{props.inCart ? 
-                "Remove" : "Add to Cart"}
+              <i className={icon}></i>
+              <span>{props.inCart ? "Remove" : words}</span>
         </button>
       </div>
     </div >
