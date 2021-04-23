@@ -7,10 +7,11 @@ export default function Card(props) {
   }
 
   const handleLike = () => {
+    console.log("item liked")
     props.addLike(props.item)
   }
 
-  const [words,] = useState(props.item.isInCart ? "Already Added" : "Add To Cart")
+  const [words] = useState(props.item.isInCart ? "Already Added" : "Add To Cart")
   const [color, setColor] = useState(props.item.isInCart ? "rgb(228,106,153)" : "rgb(251, 237, 236)");
   const [font, setFont] = useState(props.item.isInCart ? "rgb(251, 237, 236)" : "rgb(228,106,153)")
   const [icon, setIcon] = useState(props.item.isInCart ? "fas fa-check" : "fas fa-shopping-basket");

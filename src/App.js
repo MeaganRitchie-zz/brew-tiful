@@ -27,7 +27,7 @@ export default class App extends Component {
   }
 
   addLike = (item) => {
-    const foundItem = this.state.menu.find(i => item === i)
+    const foundItem = this.state.menu.find(i => item.name === i.name)
     foundItem.like = !item.like
     this.setState({ ...this.state.like, foundItem })
   }
